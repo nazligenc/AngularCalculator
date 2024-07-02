@@ -1,0 +1,76 @@
+<div class="calculator"  [ngClass]="{'dark-mode':isDarkMode,'light-mode':!isDarkMode}">
+
+  <div class="display">
+    <div class="equalicon" style=" color: var(--font-color)">=</div>
+
+
+      <i class="history fa-solid fa-clock-rotate-left" (click)="toggleHistory()"></i>
+
+
+    <div class="theme-buttons">
+      <div style="display:flex;gap:1px">
+        <button class="theme-button light-theme" (click)="toggleTheme()"><i class="fa-solid fa-sun"></i></button>
+        <button class="theme-button dark-theme" (click)="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
+      </div>
+  </div>
+    <div style="display: flex; flex-direction: row">
+      <div class="last-three-operations" *ngIf="showHistory">
+        <ul>
+          <li *ngFor="let operation of lastThreeOperations">{{ operation }}</li>
+        </ul>
+      </div>
+      <div style="display: flex">
+        <div class="current-display">{{ display }}</div>
+        <div class="result-display">{{ result }}</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="keyboard">
+    <div class="operator">
+      <button (click)="clear()">AC</button>
+      <button (click)="toggleSign()">+/-</button>
+      <button (click)="appendOperator('%')">%</button>
+    </div>
+    <div style="display: flex; flex-direction: row">
+
+      <div class="kare">
+        <div class="column">
+          <button (click)="appendNumber(1)">1</button>
+          <button (click)="appendNumber(4)">4</button>
+          <button (click)="appendNumber(7)">7</button>
+          <button (click)="appendOperator('.')">.</button>
+        </div>
+        <div class="column">
+          <button (click)="appendNumber(2)">2</button>
+          <button (click)="appendNumber(5)">5</button>
+          <button (click)="appendNumber(8)">8</button>
+          <button (click)="appendNumber(0)">0</button>
+        </div>
+        <div class="column">
+          <button (click)="appendNumber(3)">3</button>
+          <button (click)="appendNumber(6)">6</button>
+          <button (click)="appendNumber(9)">9</button>
+          <button (click)="appendZeroes(0)">00</button>
+        </div>
+      </div>
+      <div class="dikey">
+        <button (click)="appendOperator('/')">÷</button>
+        <button (click)="appendOperator('*')">×</button>
+        <button (click)="appendOperator('-')">-</button>
+        <button (click)="appendOperator('+')">+</button>
+        <button (click)="calculate()">=</button>
+      </div>
+    </div>
+
+
+
+
+</div>
+</div>
+
+
+
+
