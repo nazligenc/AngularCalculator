@@ -1,27 +1,54 @@
-# Project1
+# Calculator Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+This project is an Angular-based calculator application that provides essential arithmetic functionalities, including addition, subtraction, multiplication, and division. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6. 
 
-## Development server
+## Features:
+- Performs basic arithmetic operations.
+- Offers both light and dark theme options.
+- Displays the last 3 performed operations.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+1. Clone the repository:
+   ```bash
+    git clone https://github.com/username/repository-name.git
+   
+2. Navigate to the project directory:
+   ```bash
+     cd repository-name
+3. Install the dependencies:
+    ```bash
+     npm install
+4. Run the application
+   ```bash
+     ng serve
+6. Open your browser and go to:
+   ```bash
+    http://localhost:4200
+ ## Usage
+Open the application in your browser and use the calculator by clicking the buttons or using your keyboard.
 
-## Code scaffolding
+## Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://github.com/nazligenc/AngularCalculator/assets/77196119/4cfbd338-d33b-433f-871f-f51c8e184928)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Contributing
+Contributions are greatly appreciated! If you encounter any issues or have ideas for enhancements, feel free to open an issue or create a pull request.
+This project is licensed under the MIT License.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Credits
+The Calculator App is created and maintained by Nazlı Genç.
 
-## Running end-to-end tests
+## Contact
+For any inquiries or questions, please contact nazli.gencx@gmail.com.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+"You're welcome to explore the project and make use of the Calculator App!"
 
-## Further help
+   
+   
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   
+  
+
