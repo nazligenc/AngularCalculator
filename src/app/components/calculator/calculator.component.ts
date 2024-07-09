@@ -59,15 +59,9 @@ export class CalculatorComponent {
       return;
     }
 
-    if (operator === '.') {
-      const parts = this.display.split(/[\+\-\×\÷]/);
-      const currentPart = parts[parts.length - 1];
-      if (currentPart.includes('.')) {
-        return;
-      }
+    if (!isNaN(Number(lastChar)) || lastChar === '.') {
+      this.display += operator;
     }
-
-    this.display += operator;
   }
 
   clear() {
